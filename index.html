@@ -3,10 +3,101 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="./css/styles.css" />
+      <link rel="stylesheet" href="./css/global.css" />
       <title>Quiz-App</title>
    </head>
    <body>
-      <header></header>
+      <header class="header">
+         <h1 class="header__title">&lt; WebDev Quizzap &gt;</h1>
+      </header>
+
+      <main>
+         <section class="quizcard__card">
+            <p aria-label="question" class="quizcard__question">
+               What use do semantics have?
+            </p>
+            <p aria-label="answer" class="quizcard__answer">
+               To increase accessability.
+            </p>
+            <ul class="quizcard__tag-list">
+               <li class="quizcard__tag">html</li>
+               <li class="quizcard__tag">structure</li>
+            </ul>
+            <button class="quizcard__bookmark">
+               <img src="./assets/bookmark-hollow.png" alt="button bookmark" />
+            </button>
+         </section>
+         <section class="quizcard__card">
+            <p aria-label="question" class="quizcard__question">
+               What is flexbox used for?
+            </p>
+            <p aria-label="answer" class="quizcard__answer">
+               To handle elements in either a vertical or horizontal line
+               efficiently.
+            </p>
+            <ul class="quizcard__tag-list">
+               <li class="quizcard__tag">structure</li>
+            </ul>
+            <button class="quizcard__bookmark">
+               <img src="./assets/bookmark-hollow.png" alt="button bookmark" />
+            </button>
+         </section>
+         <section class="quizcard__card">
+            <p aria-label="question" class="quizcard__question">
+               What is the absolute position relativ to?
+            </p>
+            <p aria-label="answer" class="quizcard__answer">
+               To the closest ancestor that has a relative postion setting.
+            </p>
+            <ul class="quizcard__tag-list">
+               <li class="quizcard__tag">html</li>
+               <li class="quizcard__tag">structure</li>
+            </ul>
+            <button class="quizcard__bookmark">
+               <img src="./assets/bookmark-solid.png" alt="button bookmark" />
+            </button>
+         </section>
+         <section class="quizcard__card">
+            <p aria-label="question" class="quizcard__question">
+               What is the Z-Index?
+            </p>
+            <p aria-label="answer" class="quizcard__answer">
+               For letting objects overlap or be under other objects.
+            </p>
+            <ul class="quizcard__tag-list">
+               <li class="quizcard__tag">html</li>
+               <li class="quizcard__tag">structure</li>
+            </ul>
+            <button class="quizcard__bookmark">
+               <img src="./assets/bookmark-solid.png" alt="button bookmark" />
+            </button>
+         </section>
+         <section class="quizcard__card">
+            <p aria-label="question" class="quizcard__question">
+               What positionioning would you use to for a navbar that is always
+               visible?
+            </p>
+            <p aria-label="answer" class="quizcard__answer">fixed.</p>
+            <ul class="quizcard__tag-list">
+               <li class="quizcard__tag">html</li>
+               <li class="quizcard__tag">structure</li>
+            </ul>
+            <button class="quizcard__bookmark">
+               <img src="./assets/bookmark-hollow.png" alt="button bookmark" />
+            </button>
+         </section>
+      </main>
+
+      <nav class="navbar">
+         <button class="navbar__button">
+            <img src="./assets/house-chimney-solid.png" alt="button home" />
+         </button>
+         <button class="navbar__button">
+            <img src="./assets/bookmark-hollow.png" alt="button bookmarks" />
+         </button>
+         <button class="navbar__button">
+            <img src="./assets/user-hollow.png" alt="button user settings" />
+         </button>
+      </nav>
    </body>
 </html>

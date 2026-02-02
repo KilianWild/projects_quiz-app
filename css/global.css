@@ -1,0 +1,29 @@
+@import url(./components/navbar.css);
+@import url(./components/quizcard.css);
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding-bottom: 120px;
+   padding-top: 80px;
+}
+.header {
+   position: fixed;
+   top: 0;
+   z-index: 1;
+   background-color: rgb(187, 211, 247);
+   width: 100%;
+   height: 70px;
+   display: flex;
+   justify-content: center;
+   box-shadow: 0px 8px 5px 0px rgb(102, 102, 102);
+}
+
+.header__title {
+   align-self: center;
+}

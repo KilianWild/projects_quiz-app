@@ -1,0 +1,61 @@
+.quizcard__card {
+   position: relative;
+   width: 60%;
+   height: 40%;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: rgb(235, 235, 235);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 3%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.quizcard__bookmark {
+   position: absolute;
+   transform-origin: top right;
+   transform: scale(0.3);
+   right: 20px;
+   top: -10px;
+   background-color: transparent;
+   border: none;
+}
+
+.quizcard__question {
+   font-weight: bold;
+   padding: 30px;
+   margin-bottom: 0;
+   text-align: center;
+}
+
+.quizcard__answer {
+   background-color: white;
+   border: solid 1px rgb(216, 216, 216);
+   border-radius: 10px;
+   padding: 10px;
+   margin-top: 0;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+.quizcard__tag-list {
+   display: flex;
+   list-style: none;
+   align-self: flex-start;
+   width: auto;
+   height: 30px;
+   padding: 0;
+   margin: 20px;
+}
+
+.quizcard__tag {
+   display: flex;
+   justify-content: center; /* horizontal */
+   align-items: center; /* vertical */
+   padding: 15px;
+   background-color: rgb(194, 194, 194);
+   margin-right: 10px;
+   border: solid 1px rgb(143, 143, 143);
+   border-radius: 5px;
+}
