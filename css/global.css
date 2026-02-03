@@ -1,5 +1,6 @@
 @import url(./components/navbar.css);
 @import url(./components/quizcard.css);
+@import url(./components/profile.css);
 
 *,
 *::before,
@@ -30,4 +31,14 @@ body {
 
 .hidden {
    display: none;
+}
+.profile__quizz-info {
+   display: flex;
+   list-style: none;
+   align-self: flex-start;
+   width: auto;
+   height: auto;
+   padding: 0;
+   margin: 5%;
+   flex-wrap: wrap;
 }
