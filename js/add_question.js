@@ -11,6 +11,13 @@ textfieldQuestion.addEventListener("input", (event) => {
    remainingCharacters.textContent = event.target.maxLength - event.target.textLength;
 });
 
+textfieldAnswer.addEventListener("input", (event) => {
+   const inputSection = event.target.closest('[data-js="add-question__input-section"]');
+   const remainingCharacters = inputSection.querySelector('[data-js="textfield-remaining-characters"]');
+
+   remainingCharacters.textContent = event.target.maxLength - event.target.textLength;
+});
+
 addQuestionForm.addEventListener("submit", (event) => {
    event.preventDefault();
 
