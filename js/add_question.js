@@ -16,11 +16,12 @@ addQuestionForm.addEventListener("submit", (event) => {
 
    const customQuestion = event.target.elements.customQuestion;
    const customAnswer = event.target.elements.customAnswer;
+   const customTag = event.target.elements.customTag;
 
-   createQuizCard(customQuestion, customAnswer);
+   createQuizCard(customQuestion, customAnswer, customTag);
 });
 
-function createQuizCard(question, answer) {
+function createQuizCard(question, answer, tag) {
    // <-- create element -->
    // <--------------------------------------------------------------------------------------------
    const newQuizCard = document.createElement("section");
@@ -36,8 +37,7 @@ function createQuizCard(question, answer) {
                Show Answer
             </button>
             <ul class="quizcard__tag-list">
-               <li class="quizcard__tag">html</li>
-               <li class="quizcard__tag">structure</li>
+               <li class="quizcard__tag" data-js="quiz-tag">???</li>
             </ul>
             <button
                aria-label="button bookmark"
@@ -50,9 +50,11 @@ function createQuizCard(question, answer) {
 
    const newQuestion = newQuizCard.querySelector('[data-js="question-paragraph"]');
    const newAnswer = newQuizCard.querySelector('[data-js="answer-paragraph"]');
+   const newTag = newQuizCard.querySelector('[data-js="quiz-tag"]');
 
    newQuestion.textContent = question.value;
    newAnswer.textContent = answer.value;
+   newTag.textContent = tag.value;
 
    // <-- attach quizCard -->
    addQuestionForm.insertAdjacentElement("afterend", newQuizCard);

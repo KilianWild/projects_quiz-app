@@ -36,6 +36,10 @@
    height: 80px;
    margin-bottom: 0;
 }
+.add-question__input-tag {
+   height: 22px;
+   margin-bottom: 0;
+}
 
 .textfield__helptext {
    margin-top: 0;
