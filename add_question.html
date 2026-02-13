@@ -11,7 +11,43 @@
       <header class="header">
          <h1 class="header__title">&lt; WebDev Quizzap &gt;</h1>
       </header>
-      <main></main>
+      <main>
+         <form class="quizcard__card" data-js="add-question__form">
+            <h2 class="add-question__title">Submit yor own Question Card</h2>
+
+            <section class="add-question__input-section" data-js="add-question__input-section">
+               <label for="custom-question">Your Question:</label>
+               <textarea
+                  id="custom-question"
+                  name="customQuestion"
+                  type="text"
+                  maxlength="150"
+                  class="add-question__input"
+                  data-js="textfield-question"
+               ></textarea>
+               <p class="textfield__helptext">
+                  You have <span data-js="textfield-remaining-characters">150</span> Characters left
+               </p>
+            </section>
+            <section class="add-question__input-section" data-js="add-question__input-section">
+               <label for="custom-answer">Your Answer:</label>
+               <textarea
+                  id="custom-answer"
+                  name="customAnswer"
+                  type="text"
+                  maxlength="150"
+                  class="add-question__input"
+                  data-js="textfield-answer"
+               ></textarea>
+               <p class="textfield__helptext">
+                  You have <span data-js="textfield-remaining-characters">150</span> Characters left
+               </p>
+            </section>
+            <button type="submit" class="add-question__button-submit no-select no-select" data-js="button-submit">
+               Submit your Card
+            </button>
+         </form>
+      </main>
       <footer>
          <nav class="navbar">
             <a href="./index.html" class="navbar__button">

@@ -1,6 +1,7 @@
 @import url(./components/navbar.css);
 @import url(./components/quizcard.css);
 @import url(./components/profile.css);
+@import url(./components/add-question.css);
 
 *,
 *::before,
@@ -29,7 +30,7 @@ body {
    align-self: center;
 }
 
-.hidden {
+.u-hidden {
    display: none;
 }
 .profile__quizz-info {
